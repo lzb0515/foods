@@ -1,0 +1,69 @@
+{
+  "name": "foods",
+  "version": "1.0.0",
+  "description": "This is  a food app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --with",
+    "start": "set NODE_ENV=dev && webpack-dev-server --progress --colors",
+    "mock": "node --harmony ./mock/server.js",
+    "build": "rm -rf ./build && set NODE_ENV=production && webpack --config ./webpack.production.config.js --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lzb0515/foods.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lzb0515/foods/issues"
+  },
+  "homepage": "https://github.com/lzb0515/foods#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^3.4.0",
+    "eslint-loader": "^1.5.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.30.1",
+    "json-loader": "^0.5.4",
+    "koa": "^1.2.2",
+    "koa-router": "^5.4.0",
+    "node-sass": "^4.5.3",
+    "open-browser-webpack-plugin": "0.0.5",
+    "postcss-loader": "^0.11.0",
+    "react-transform-hmr": "^1.0.4",
+    "sass": "^1.0.0-beta.2",
+    "sass-loader": "^6.0.6",
+    "scss": "^0.2.4",
+    "scss-loader": "0.0.1",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "es6-promise": "^3.3.1",
+    "immutable": "^3.8.1",
+    "lodash": "^4.17.4",
+    "react": "^15.3.1",
+    "react-addons-css-transition-group": "^15.3.1",
+    "react-addons-perf": "^15.3.1",
+    "react-addons-pure-render-mixin": "^15.6.0",
+    "react-dom": "^15.3.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.7.0",
+    "react-swipe": "^5.0.8",
+    "redux": "^3.5.2",
+    "swipe-js-iso": "^2.0.4",
+    "whatwg-fetch": "^1.1.1"
+  }
+}
