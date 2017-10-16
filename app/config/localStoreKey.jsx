@@ -1,1 +1,0 @@
-export const CITYNAME = 'UER_CURRENT_CITY_NAME'
